@@ -1,0 +1,21 @@
+package Ch20;
+
+@CustomAnnotation(value="소농민", number=10000, isOpen=true)
+class Simple{
+	Simple(){
+		CustomAnnotation ref = this.getClass().getAnnotation(CustomAnnotation.class);
+		System.out.println("VALUE : " + ref.value());
+		System.out.println("NUMBER : " +ref.number());
+		System.out.println("ISOPEN : " +ref.isOpen());
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		Simple ob = new Simple();
+		System.out.println(ob);
+
+	}
+
+}

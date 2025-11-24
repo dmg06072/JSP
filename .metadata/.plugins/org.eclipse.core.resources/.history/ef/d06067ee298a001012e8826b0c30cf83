@@ -1,0 +1,30 @@
+package Ch03;
+
+class Box <A,B>{
+	A ob1;
+	B ob2;
+	Box(A ob1, B ob2){
+		this.ob1 = ob1;
+		this.ob2 = ob2;
+	}
+	@Override
+	public String toString() {
+		return "Box [ob1=" + ob1 + ", ob2=" + ob2 + "]";
+	}
+	
+}
+
+public class C06Ex {
+
+	public static void main(String[] args) {
+		// BOX
+		Box<Integer,Integer> ob1 = new Box(10, 20);
+		System.out.println(ob1);
+		
+		// BOX
+		Box<String,String> ob1 = new Box("샤코", "코르키");
+		System.out.println(ob1);
+
+	}
+
+}

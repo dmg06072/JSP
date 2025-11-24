@@ -1,0 +1,14 @@
+package Ch03;
+
+public class C07Ex {
+	
+	public static <T> void print1(T ob) {
+		System.out.println(ob);
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package Ch19;
+
+@FunctionalInterface
+interface Func1{
+	void say(String message);
+}
+@FunctionalInterface
+interface Func2{
+	void sum(Integer ...arg);
+}
+
+public class C01FunctionalInterfaceMain {
+
+	public static void main(String[] args) {
+		// 01
+		Func1 func1 = (message) -> {System.out.println(message+"_!");};
+		func1.say("HELLO WORLD");
+		Func1 func1_2 = System.out::println;
+		func1_2.say("HELLO WORLD");
+
+	}
+
+}

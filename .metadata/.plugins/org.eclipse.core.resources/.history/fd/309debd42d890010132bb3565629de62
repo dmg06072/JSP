@@ -1,0 +1,17 @@
+package Ch17;
+
+interface Printer{
+	void print(String name);	// 추상메서드
+}
+
+public class C02Lamda {
+
+	public static void main(String[] args) {
+		
+		// 01
+		Printer printer = (message)->{System.out.println("01."_message);};
+		printer.print("잘가");
+
+	}
+
+}

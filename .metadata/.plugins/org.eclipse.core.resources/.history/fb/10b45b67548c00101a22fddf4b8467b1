@@ -1,0 +1,16 @@
+package Ch19;
+
+interface Func1{
+	void say(String message);
+}
+
+public class C01FunctionalInterfaceMain {
+
+	public static void main(String[] args) {
+		// 01
+		Func1 func1 = (message) -> {System.out.println(message+"_!");};
+		func1.say("HELLO WORLD");
+
+	}
+
+}

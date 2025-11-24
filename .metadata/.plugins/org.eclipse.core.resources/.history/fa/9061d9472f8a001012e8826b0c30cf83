@@ -1,0 +1,17 @@
+package Ch01;
+
+public class C10Ex {
+	
+	public static void func1(int num) {
+		System.out.println(num);
+	}
+	public static void func2(Object obj) {
+		System.out.println(obj);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

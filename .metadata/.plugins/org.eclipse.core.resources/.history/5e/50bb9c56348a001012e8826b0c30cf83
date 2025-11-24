@@ -1,0 +1,46 @@
+package Ch01;
+
+class Buyer{
+	private int myMoney;
+	private int appleCnt;
+	// 모든 인자 생성자
+	public Buyer(int myMoney, int appleCnt) {
+		super();
+		this.myMoney = myMoney;
+		this.appleCnt = appleCnt;
+	}
+	// 투스트링
+	@Override
+	public String toString() {
+		return "Buyer [myMoney=" + myMoney + ", appleCnt=" + appleCnt + "]";
+	}
+	
+	
+}
+class Seller{
+	private int myMoney;
+	private int appleCnt;
+	// 모든 인자 생성자
+	public Seller(int myMoney, int appleCnt) {
+		super();
+		this.myMoney = myMoney;
+		this.appleCnt = appleCnt;
+	}
+	// 투스트링
+	@Override
+	public String toString() {
+		return "Seller [myMoney=" + myMoney + ", appleCnt=" + appleCnt + "]";
+	}
+	
+	
+	
+}
+
+public class C11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

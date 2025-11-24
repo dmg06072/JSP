@@ -1,0 +1,66 @@
+package Ch01;
+
+class Buyer{
+	private int myMoney;
+	private int appleCnt;
+	// 모든 인자 생성자
+	public Buyer(int myMoney, int appleCnt) {
+		super();
+		this.myMoney = myMoney;
+		this.appleCnt = appleCnt;
+	}
+	public void payment(Seller 사과장수, int money) {
+		myMoney -= money;
+		int cnt = 사과장수.receive(money);
+		this.appleCnt += cnt;
+	}
+	// 투스트링
+	@Override
+	public String toString() {
+		return "Buyer [myMoney=" + myMoney + ", appleCnt=" + appleCnt + "]";
+	}
+	
+	
+}
+class Seller{
+	private int myMoney;
+	private int appleCnt;
+	private int price;
+	// 모든 인자 생성자
+	public Seller(int myMoney, int appleCnt, int price) {
+		super();
+		this.myMoney = myMoney;
+		this.appleCnt = appleCnt;
+		this.price = price;
+	}
+	public int receive(int money) {
+		this.myMoney += money;
+		int cnt = money / this.price;
+		appleCnt -= cnt;
+		return cnt;
+	}
+	// 투스트링
+	@Override
+	public String toString() {
+		return "Seller [myMoney=" + myMoney + ", appleCnt=" + appleCnt + ", price =" + price +" ]";
+	}
+	
+	
+	
+}
+
+public class C11 {
+
+	public static void main(String[] args) {
+		// 
+		Buyer 아구몬 = new Buyer(10000, 0);
+		Buyer 파피몬 = new Buyer(20000, 0);
+		//
+		Seller 사과장수1 = new Seller(50000,100,1000);
+		//
+		아구몬.payment(사과장수1, 3000);
+		파피몬.payment(사과장수1, 8000);
+
+	}
+
+}

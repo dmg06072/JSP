@@ -1,0 +1,23 @@
+package Ch03;
+
+import java.util.Arrays;
+
+public class C07Ex {
+	
+	public static <T> void print1(T ob) {
+		System.out.println(ob);
+	}
+	public static <T> T print2(T box, int ...age) {
+		int sum = Arrays.stream(args).reduce(0, (s, val)->{sum+val});
+		return box;
+				
+	}
+
+	public static void main(String[] args) {
+		print1(10);
+		print1("워그레이몬");
+		print1(new Student("스컬그레이몬","바이러스",3));
+
+	}
+
+}
